@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Listings - FoodRescue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="foodlisting.css">
+</head>
+<body>
+    <div class="listings-wrapper">
+        <header class="listings-header">
+            <h1>Available Food Donations</h1>
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Search by food type or location">
+                <select id="filter">
+                    <option value="">Filter by Type</option>
+                    <option value="bread">Bread</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="vegetable">Vegetables</option>
+                </select>
+                <button onclick="searchListings()">Search</button>
+            </div>
+        </header>
+
+        <section class="food-listings">
+            <div class="food-card">
+                <h3>Food Type: Rice</h3>
+                <p>Quantity: 5 kg</p>
+                <p>Expiration: 7 days</p>
+                <p>Location: [City, State]</p>
+                <button class="btn">Claim Donation</button>
+            </div>
+            <div class="food-card">
+                <h3>Food Type: Bread</h3>
+                <p>Quantity: 10 loaves</p>
+                <p>Expiration: 2 days</p>
+                <p>Location: [City, State]</p>
+                <button class="btn">Claim Donation</button>
+            </div>
+            <!-- Repeat similar blocks for more food items -->
+        </section>
+    </div>
+
+    <script>
+        // Search Listings (can link to an actual search function or API)
+        function searchListings() {
+            const query = document.getElementById('search').value;
+            const filter = document.getElementById('filter').value;
+            alert('Searching for: ' + query + ' with filter: ' + filter);
+            // You can connect this to a backend API that filters food listings based on the query and filter
+        }
+    </script>
+</body>
+</html>
