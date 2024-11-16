@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation - FoodRescue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donor.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Donate Food, Help Change Lives</h1>
+            <p>Your donation can help fight hunger and reduce food waste. Join us in making a difference.</p>
+            <a href="#donate-form" class="btn-primary">Donate Food Now</a>
+        </div>
+    </section>
+    <br>
+    <!-- Donation Process Overview -->
+    <section class="donation-process">
+        <div class="container">
+            <h2>How Food Donation Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Choose Your Donation</h3>
+                    <p>Select the type and quantity of food you wish to donate.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2: Schedule a Pickup</h3>
+                    <p>We make it easy by arranging a convenient pickup time for you.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3: Make a Difference</h3>
+                    <p>Your food donation will be delivered to those in need. It's that simple!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form" id="donate-form">
+        <div class="container">
+            <h2>Donate Your Food</h2>
+            <p>Fill out the form below to donate food to those in need.</p>
+            <form action="/submit-donation" method="POST">
+                <div class="form-group">
+                    <label for="food-type">Food Type</label>
+                    <select id="food-type" name="food-type" required>
+                        <option value="fruit">Fruit</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="canned-goods">Canned Goods</option>
+                        <option value="bread">Bread</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="meat">Meat</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="How much?" required>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-date">Preferred Pickup Date</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="donor-name">Full Name</label>
+                    <input type="text" id="donor-name" name="donor-name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="btn-primary">Submit Donation</button>
+            </form>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Food Donors Are Saying</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Donating food to FoodRescue was quick and easy! I feel great knowing that my food helped someone in need."</p>
+                    <p class="name">- Emily Williams</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"It's amazing how easy it is to give back to the community. Thank you for making it so simple!"</p>
+                    <p class="name">- Michael Smith</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FoodRescue. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+</body>
+</html>

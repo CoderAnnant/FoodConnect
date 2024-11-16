@@ -1,0 +1,231 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #2C3E50;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('manningham_matters_food_donations_block.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.hero-section .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.hero-section .btn-primary {
+    padding: 15px 30px;
+    background-color: #e67e22;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #d35400;
+}
+
+/* Donation Process Section */
+.donation-process {
+    padding: 60px 0;
+    background-color: #ecf0f1;
+    background: url("features-that-every-on-demand-food-delivery-app-development-company-should-have-in-their-software.webp") no-repeat center center/cover;
+}
+
+.donation-process h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.steps .step {
+    background-color: rgba(255, 255, 255, 0.767);
+    padding: 30px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.steps .step h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.steps .step p {
+    font-size: 16px;
+}
+
+/* Donation Form Section */
+.donation-form {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.donation-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.donation-form p {
+    margin-bottom: 40px;
+}
+
+.donation-form form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form .form-group {
+    margin-bottom: 20px;
+}
+
+.donation-form label {
+    font-weight: bold;
+    display: block;
+}
+
+.donation-form input, .donation-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.donation-form .btn-primary {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donation-form .btn-primary:hover {
+    background-color: #2ecc71;
+}
+
+/* Donation Benefits Section */
+.donation-benefits {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+}
+
+.donation-benefits h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.benefits-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.benefits-cards .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefits-cards .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.benefits-cards .card p {
+    font-size: 16px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    background:url("food_all.jpg");
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ecf0f1;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.842);
+    padding: 30px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.testimonial-card .name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
